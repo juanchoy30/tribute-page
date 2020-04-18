@@ -1,0 +1,17 @@
+.jumbotron {
+  margin: 0px auto;
+  padding: 60px 40px;
+  min-height: 550px;
+  background-color: black;
+  background-image: url(http://3.bp.blogspot.com/-DEmC2rLawEY/T4tR0A53CII/AAAAAAAAE-0/LNnIytwnBng/s1600/francisco-herrera-luque.jpg);
+  background-size: cover;
+  background-position: bottom;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  color: white;
+  font-weight: bold;
+  text-shadow: 5px 3px 5px #000000; }
+
+.row-content {
+  margin: 0px auto;
+  padding: 30px 20px; }
