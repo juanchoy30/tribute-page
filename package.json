@@ -1,0 +1,24 @@
+{
+  "name": "tribute-page",
+  "version": "1.0.0",
+  "description": "Tribute page for FreeCodeCamp project",
+  "main": "index.html",
+  "scripts": {
+    "start": "npm run lite",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lite": "lite-server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/juanchoy30/tribute-page.git"
+  },
+  "author": "Juan Miguel Choy",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/juanchoy30/tribute-page/issues"
+  },
+  "homepage": "https://github.com/juanchoy30/tribute-page#readme",
+  "devDependencies": {
+    "lite-server": "^2.5.4"
+  }
+}
