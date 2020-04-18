@@ -1,5 +1,9 @@
+//colors
+$primaryColor: #000000;
+$secondaryColor: #ffffff;
 
-
+//heights
+$carouselHeight: 500px;
 
 //scss mixins
 @mixin padding-margin($up-down, $left-right) {
@@ -9,18 +13,55 @@
 
 .jumbotron {
     @include padding-margin(60px, 40px);
-    min-height: 550px;
-    background-color: black;
+    height: 550px;
+    background-color: $primaryColor;
     background-image: url(http://3.bp.blogspot.com/-DEmC2rLawEY/T4tR0A53CII/AAAAAAAAE-0/LNnIytwnBng/s1600/francisco-herrera-luque.jpg);
     background-size: cover;
     background-position: bottom;
     background-attachment: fixed;
     background-repeat: no-repeat;
-    color: white;
+    color: $secondaryColor;
     font-weight: bold;
-    text-shadow: 5px 3px 5px #000000;
+    text-shadow: 5px 3px 5px $primaryColor;
 }
 
 .row-content {
     @include padding-margin(30px, 20px);
+}
+
+.btn {
+    box-shadow: 5px 3px 5px $primaryColor;
+}
+
+#gallery {
+    @include padding-margin(30px, 0px);
+    .carousel {
+        background: black;
+        box-shadow: 5px 3px 5px $primaryColor;
+        .carousel-item {
+            height: $carouselHeight;
+            text-shadow: 5px 3px 5px $primaryColor;
+            font-weight: bold;
+            img {
+                position: absolute;
+                min-height: $carouselHeight;
+                width: 100%;
+                object-fit: cover;
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+            }
+        }
+    }    
+}
+
+.card {
+    margin: 40px;
+    box-shadow: 5px 3px 5px $primaryColor;
+}
+
+.footer {
+    @include padding-margin(30px, 20px);
+    background-color: $primaryColor;
+    color: $secondaryColor;
 }
